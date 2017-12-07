@@ -45,6 +45,7 @@ class PongerController extends Controller
             'last_name' => 'bail|required',
             'city' => 'bail|required',
             'state'=> 'bail|required',
+            ]);
         Ponger::create($request->all());
         return redirect('pongers');
     }
