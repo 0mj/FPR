@@ -26,7 +26,7 @@ class PongerController extends Controller
     // some work on local master
     public function create()
     {
-        //
+        return view ('pongers.create');
     }
 
     /**
@@ -37,7 +37,8 @@ class PongerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Ponger::create($request->all());
+        return redirect('pongers');
     }
 
     /**
