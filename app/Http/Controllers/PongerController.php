@@ -14,8 +14,11 @@ class PongerController extends Controller
      */
     public function index()
     {
-        $pongers = Ponger::all();
+        // $pongers = Ponger::all();
+        // return view('pongers.index', ['pongers' => $pongers]);
+        $pongers = Ponger::orderBy('first_name','asc')->paginate(9);
         return view('pongers.index', ['pongers' => $pongers]);
+
     }
 
     /**
