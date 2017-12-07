@@ -14,7 +14,8 @@ class PongerController extends Controller
      */
     public function index()
     {
-        //
+        $pongers = Ponger::all();
+        return view('pongers.index', ['pongers' => $pongers]);
     }
 
     /**
@@ -47,7 +48,8 @@ class PongerController extends Controller
      */
     public function show(Ponger $ponger)
     {
-        //
+        return view('pongers.show', ['ponger' => $ponger ]);
+
     }
 
     /**
