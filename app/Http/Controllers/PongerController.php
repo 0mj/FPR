@@ -40,6 +40,11 @@ class PongerController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'first_name' => 'required|max:255',
+            'last_name' => 'required',
+            'city' => 'required',
+            'state'=> 'required',
         Ponger::create($request->all());
         return redirect('pongers');
     }
