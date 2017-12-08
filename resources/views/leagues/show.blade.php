@@ -13,6 +13,6 @@
 		<li>Ponger lifetime_loss: {{ $ponger->lifetime_loss }}</li>
 	</ul>
 <span>
-	<a href="{{ route('pongers.edit', $ponger) }}" class="btn btn-primary">Edit</a>
+	<a href="{{ route('leagues.edit', $league) }}" class="btn btn-primary">Edit</a>
 </span>
 @endsection 

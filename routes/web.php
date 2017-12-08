@@ -13,3 +13,7 @@
 
 Route::get('pongers', 'PongerController@index');
 Route::resource('pongers', 'PongerController');
+
+
+Route::get('leagues', 'LeagueController@index');
+Route::resource('leagues', 'LeagueController');

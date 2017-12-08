@@ -70,7 +70,8 @@ class PongerController extends Controller
      */
     public function edit(Ponger $ponger)
     {
-        //
+        $leagues = \App\League::get()->pluck('name', 'id')->sortBy('name');
+        return view('pongers.edit', compact('ponger', 'leagues'));
     }
 
     /**
@@ -82,7 +83,9 @@ class PongerController extends Controller
      */
     public function update(Request $request, Ponger $ponger)
     {
-        //
+        $ponger->update($request->all());
+        return redirect('pongers');
+
     }
 
     /**
