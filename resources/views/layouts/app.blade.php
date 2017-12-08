@@ -11,6 +11,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
   <body>
+    @if(count($errors) > 0 ) 
+    <ul>
+       @foreach ($errors->all() as $error)
+        <li> {{ $error }}</li>
+       @endforeach 
+
+    </ul>
+
+    @endif
+
 @include('partials.header')
     <main class="container pt-4">
         @if (session('status'))
