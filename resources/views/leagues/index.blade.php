@@ -4,16 +4,16 @@
 
 
 <ul>
-	@foreach($pongers as $ponger)
+	@foreach($leagues as $league)
 		<li>
-			<a href="{{ route('pongers.show', $ponger) }}">
-				{{ $ponger->first_name }}
+			<a href="{{ route('leagues.show', $league) }}">
+				{{ $league->name }}
 			</a>
 		</li>
 	@endforeach
 </ul>
 
-{{ $pongers->links() }}
+{{ $leagues->links() }}
 
 
 @endsection
