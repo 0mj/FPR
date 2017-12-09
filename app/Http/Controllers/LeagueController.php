@@ -14,7 +14,8 @@ class LeagueController extends Controller
      */
     public function index()
     {
-        //
+                $leagues = League::orderBy('name','asc')->paginate(9);
+        return view('leagues.index', ['leagues' => $leagues]);
     }
 
     /**
@@ -46,7 +47,7 @@ class LeagueController extends Controller
      */
     public function show(League $league)
     {
-        //
+        return view('leagues.show', ['league' => $league ]);
     }
 
     /**
@@ -57,7 +58,8 @@ class LeagueController extends Controller
      */
     public function edit(League $league)
     {
-        //
+        $pongers = App\Ponger::get()->pluck('first_name', 'id')->sortBy('first_name');
+        return view('leagues.edit',compact('league', 'pongers'));
     }
 
     /**
@@ -69,7 +71,9 @@ class LeagueController extends Controller
      */
     public function update(Request $request, League $league)
     {
-        //
+        $league->update($request->all());
+        $league->pongers()->sync($request->pongers);
+        return redirect('leagues');
     }
 
     /**
