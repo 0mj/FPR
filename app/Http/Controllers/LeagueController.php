@@ -58,8 +58,13 @@ class LeagueController extends Controller
      */
     public function edit(League $league)
     {
-        $pongers = App\Ponger::get()->pluck('first_name', 'id')->sortBy('first_name');
-        return view('leagues.edit',compact('league', 'pongers'));
+       # Relation 
+        // $pongers = App\Ponger::get()->pluck('first_name', 'id')->sortBy('first_name');
+        // return view('leagues.edit',compact('league', 'pongers'));
+
+        #Simple edit
+        #SIMPLE EDIT..
+        return view('leagues.edit', ['league' => $league]);
     }
 
     /**

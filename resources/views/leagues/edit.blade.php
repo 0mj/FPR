@@ -2,7 +2,7 @@
 @section('main')
 
 <div class="input-group">
-	<form action="{{ route('leagues.update', $ponger) }}" method="post">
+	<form action="{{ route('pongers.update', $league) }}" method="post">
 		 {{ method_field('patch') }}
 
 
