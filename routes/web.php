@@ -21,3 +21,7 @@ Route::resource('leagues', 'LeagueController');
 Route::get('blade', function () {
     return view('bracket');
 });
+
+Route::get('/', function () {
+    return view('index');
+})->name('index.index');
