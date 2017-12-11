@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('main')
 
-
-<link rel="stylesheet" type="text/css" href="flexBox.css">
+<!-- CREDIT = https://codepen.io/aronduby/pen/qliuj -->
+<!-- <link rel="stylesheet" type="text/css" href="flexBox.css"> -->
 <h1>2013 NCAA Tournament - Midwest Bracket</h1>
 <main id="tournament">
 	<ul class="round round-1">

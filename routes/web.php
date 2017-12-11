@@ -17,3 +17,7 @@ Route::resource('pongers', 'PongerController');
 
 Route::get('leagues', 'LeagueController@index');
 Route::resource('leagues', 'LeagueController');
+
+Route::get('blade', function () {
+    return view('bracket');
+});
