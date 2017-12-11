@@ -2,8 +2,12 @@
 @section('main')
 
 <!-- CREDIT = https://codepen.io/aronduby/pen/qliuj -->
-<!-- <link rel="stylesheet" type="text/css" href="flexBox.css"> -->
-<h1>2013 NCAA Tournament - Midwest Bracket</h1>
+<!-- <link rel="stylesheet" type="text/css" href="/public/css/flexBox.css"> -->
+<link rel="stylesheet" type="text/css" href="{{ URL::to('css/flexBox.css')}}">
+
+<!-- <h1>2017 Family Doubles Pong Off</h1> 
+ <div class="clearfix"></div>
+<br> -->
 <main id="tournament">
 	<ul class="round round-1">
 		<li class="spacer">&nbsp;</li>

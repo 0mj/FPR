@@ -6,7 +6,7 @@
         <div class="col">
             
             <h1>Family Pong Record</h1>
-            <p>Family Pong Record</p>
+            <p>Legendary pong record repository.  Official proof for bragging rights.</p>
         </div>
 
     </div>

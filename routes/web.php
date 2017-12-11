@@ -18,10 +18,15 @@ Route::resource('pongers', 'PongerController');
 Route::get('leagues', 'LeagueController@index');
 Route::resource('leagues', 'LeagueController');
 
-Route::get('blade', function () {
-    return view('bracket');
+Route::get('/bracket', function () {
+    return view('pongbracket.bracket');
 });
 
 Route::get('/', function () {
     return view('index');
 })->name('index.index');
+
+
+// Route::get('/', function () {
+//     return '<h1>' . strtotime('now') . '</h1>';
+// });
