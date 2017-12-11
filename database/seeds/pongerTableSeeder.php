@@ -11,6 +11,6 @@ class pongerTableSeeder extends Seeder
      */
     public function run()
     {
-       factory(App\Ponger::class, 10)->create();
+       factory(App\Ponger::class, 30)->create();
     }
 }
