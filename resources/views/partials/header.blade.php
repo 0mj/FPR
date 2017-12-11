@@ -10,7 +10,11 @@
 		<p class="navbar-text">
         	<a class="navbar-link" href="{{ URL::to('/bracket') }}">BRACKET</a>
 		</p>
-		
+
+		<p class="navbar-text">
+        	<small><a class="navbar-link" href="{{ URL::to('/about') }}">about</a></small>
+		</p>
+
    </div>
 </nav>
 
