@@ -13,6 +13,16 @@ class BracketController extends Controller
     	return view('pongbracket.bracket');
     }
 
+    public function about()
+    {
+    	return view('pongbracket.about');
+    }
+
+
+
+
+
+
 
 
 }
