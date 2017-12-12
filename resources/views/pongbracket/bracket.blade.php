@@ -1,5 +1,5 @@
-@extends('layouts.app')
-@section('main')
+@extends('layouts.appyt')
+@section('contentyt')
 
 <!-- CREDIT = https://codepen.io/aronduby/pen/qliuj -->
 <!-- <link rel="stylesheet" type="text/css" href="/public/css/flexBox.css"> -->
@@ -8,6 +8,8 @@
 <!-- <h1>2017 Family Doubles Pong Off</h1> 
  <div class="clearfix"></div>
 <br> -->
+
+<h1>{{ $title }}</h1>
 <main id="tournament">
 	<ul class="round round-1">
 		<li class="spacer">&nbsp;</li>
