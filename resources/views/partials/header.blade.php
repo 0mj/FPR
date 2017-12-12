@@ -4,7 +4,9 @@
 
 
 		<p class="navbar-text">
-			<a class="navbar-link" href="{{ URL::to('/') }}">/</a>
+			<a class="navbar-link" href="{{ URL::to('/') }}">
+				<img src="{{asset('img/table_tennis_paddle_and_ball.png')}}" height="64" width="64">
+			</a>
 		</p>
 
 		<p class="navbar-text">
