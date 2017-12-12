@@ -1,5 +1,12 @@
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container">
+		<img src="{{ asset('img/photo.jpg') }}">
+
+
+		<p class="navbar-text">
+			<a class="navbar-link" href="{{ URL::to('/') }}">/</a>
+		</p>
+
 		<p class="navbar-text">
 			<a class="navbar-link" href="{{ route('pongers.index') }}">PONGERS</a>
 		</p>
