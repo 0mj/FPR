@@ -16,7 +16,7 @@ class BracketController extends Controller
 
     public function about()
     {
-    	$title = 'About the Bracket.';
+    	$title = 'About the Family Pong records.';
     	$features = array(
     					'Ponger Family Records.'
     					,'Ponger Individual Records'

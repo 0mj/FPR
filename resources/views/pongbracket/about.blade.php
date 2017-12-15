@@ -7,10 +7,10 @@
             
             <h1>{{ $title }}</h1>
             <h3>Featuring..</h3>
-            <ul>
+            <ul class="list-group">
 	            @if(count($features) > 0 )	
 	            	@foreach($features as $feature)
-	            		<li>
+	            		<li class="list-group-item">
 	            			{{$feature}}
 	            		</li>
 
