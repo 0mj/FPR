@@ -15,4 +15,13 @@
 <span>
 	<a href="{{ route('pongers.edit', $ponger) }}" class="btn btn-primary">Edit</a>
 </span>
+
+<span>
+	<form action="{{ route('pongers.destroy', $ponger) }}" method="post">
+	    {{ csrf_field() }}
+	    {{ method_field('delete') }}
+	    <button class="btn btn-danger" type="submit">DELETE</button>
+	</form>
+</span>
+
 @endsection 
