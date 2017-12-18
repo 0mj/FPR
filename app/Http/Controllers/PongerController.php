@@ -87,7 +87,11 @@ class PongerController extends Controller
      */
     public function update(Request $request, Ponger $ponger)
     {
+        // $ponger->update($request->all());
+        // return redirect('pongers');
+
         $ponger->update($request->all());
+        $ponger->leagues()->sync($request->leagues);
         return redirect('pongers');
 
     }
