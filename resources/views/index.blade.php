@@ -9,7 +9,8 @@
             <p>Legendary pong record repository.  Official proof for bragging rights.</p>
             <pre>
             	
-            	flex box bootstrap 3.3.7 on Bracket page
+            	flex box <a href="http://getbootstrap.com/docs/3.3/examples/grid/">bootstrap 3.3.7</a> on Bracket page
+                
             </pre>
         </div>
 

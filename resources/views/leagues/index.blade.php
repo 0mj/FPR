@@ -9,6 +9,9 @@
 			<a href="{{ route('leagues.show', $league) }}">
 				{{ $league->name }}
 			</a>
+			<small>
+			 	<a href="{{ route('leagues.edit', $league)}}">edit</a>
+			 </small>
 		</li>
 	@endforeach
 </ul>

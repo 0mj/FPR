@@ -15,6 +15,7 @@ class LeagueController extends Controller
     public function index()
     {
                 $leagues = League::orderBy('name','asc')->paginate(18);
+        // $leagues = League::orderBy('name','asc');
         return view('leagues.index', ['leagues' => $leagues]);
     }
 
@@ -59,7 +60,8 @@ class LeagueController extends Controller
     public function edit(League $league)
     {
        # Relation 
-        $pongers = \App\Ponger::get()->pluck('first_name', 'id')->sortBy('first_name');
+        // $pongers = \App\Ponger::get()->pluck('first_name', 'id')->sortBy('first_name');
+        $pongers = \App\Ponger::get()->sortBy('first_name');
         return view('leagues.edit',compact('league', 'pongers'));
 
         #Simple edit

@@ -16,7 +16,7 @@ class PongerController extends Controller
     {
         // $pongers = Ponger::all();
         // return view('pongers.index', ['pongers' => $pongers]);
-        $pongers = Ponger::orderBy('first_name','asc')->paginate(9);
+        $pongers = Ponger::orderBy('last_name','asc')->paginate(20);
         return view('pongers.index', ['pongers' => $pongers]);
 
     }
@@ -104,6 +104,7 @@ class PongerController extends Controller
      */
     public function destroy(Ponger $ponger)
     {
-        //
+        $ponger->delete();
+      return redirect('pongers');
     }
 }
