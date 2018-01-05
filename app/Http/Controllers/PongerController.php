@@ -21,6 +21,13 @@ class PongerController extends Controller
 
     }
 
+    public function getAllPongers()
+    {
+
+        $pongers = Ponger::all();
+        return view('pongers.getAllPongers', ['pongers' => $pongers]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

@@ -29,6 +29,10 @@ Route::get('/', function () {
 Route::get('pongers', 'PongerController@index');
 Route::resource('pongers', 'PongerController');
 
+# PONGERS ALL TEST..
+Route::get('getAllPongers', 'PongerController@getAllPongers');
+Route::resource('getAllpongers', 'PongerController');
+
 # LEAGUES..
 Route::get('leagues', 'LeagueController@index');
 Route::resource('leagues', 'LeagueController');
