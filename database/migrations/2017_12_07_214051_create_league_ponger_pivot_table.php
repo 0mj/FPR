@@ -15,7 +15,7 @@ class CreateLeaguePongerPivotTable extends Migration
     {
         Schema::create('league_ponger', function (Blueprint $table) {
             $table->increments('id');
-             $table->integer('league_id')->unsigned()->index();
+            $table->integer('league_id')->unsigned()->index();
             $table->foreign('league_id')->references('id')->on('leagues')->onDelete('cascade');
 
             $table->integer('ponger_id')->unsigned()->index();

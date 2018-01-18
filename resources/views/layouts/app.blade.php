@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
   <body>
+    <!-- $errors is a global variable which is a collection of errors. -->
     @if(count($errors) > 0 ) 
     <ul>
        @foreach ($errors->all() as $error)

@@ -16,7 +16,7 @@ class PongerController extends Controller
     {
         // $pongers = Ponger::all();
         // return view('pongers.index', ['pongers' => $pongers]);
-        $pongers = Ponger::orderBy('last_name','asc')->paginate(20);
+        $pongers = Ponger::orderBy('last_name','asc')->paginate(9);
         return view('pongers.index', ['pongers' => $pongers]);
 
     }
@@ -24,7 +24,8 @@ class PongerController extends Controller
     public function getAllPongers()
     {
 
-        $pongers = Ponger::all();
+        // $pongers = Ponger::all();
+        $pongers = Ponger::orderBy('first_name','asc')->get();
         return view('pongers.getAllPongers', ['pongers' => $pongers]);
     }
 
@@ -42,7 +43,7 @@ class PongerController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request  $request <-- that is all the form data
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)

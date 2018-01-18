@@ -9,6 +9,7 @@
 @include('partials.header')
 <div class="container-fluid">
 	@yield('main')	
+	
 
 </div>
 

@@ -18,6 +18,10 @@
             	@endif
             </ul>
         </div>
+    
+        <div class="col">
+            <img src="{{asset('img/ponger_cats.gif')}}">
+        </div>
 
     </div>
 
