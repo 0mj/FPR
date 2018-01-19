@@ -23,7 +23,7 @@
 	<div class="col-md-4"></div>
 	<div class="col-md-4">
 		
-		<a href="{{route('pongers.create')}} ">Create New Ponger</a><br>
+		
 		
 	</div>
 
@@ -35,11 +35,13 @@
         @foreach ($pongers as $ponger)
             <section class="col-md-4 pb-3">
                 <div class="card">
-                    <img class="card-img-top p-2" src="{{ asset('img/ponger_image_na.png') }}" height="100" width="100" />
+                    <a href="{{ route('pongers.show', $ponger) }}">
+                    	<img class="card-img-top p-2" src="{{ asset('img/ponger_image_na.png') }}" height="180" width="180" />
+                    </a>
                     <ul class="card-block list-unstyled">
                         <li class="pull-left">
                             <a href="{{ route('pongers.show', $ponger) }}">
-                                {{ $ponger->first_name }}
+                                {{ $ponger->first_name . ' ' . $ponger->last_name . ' ' . $ponger->state }}
                             </a>
                         </li>
                         <li class="pull-right">
@@ -57,5 +59,13 @@
             </section>
         @endforeach
         {{ $pongers->links('vendor.pagination.bootstrap-4') }}
+
+        
     </div>
+    <div class="row justify-content-center">
+		<section class="col">
+			<button type="submit" class="btn ">
+			<a href="{{route('pongers.create')}} ">Create New Ponger</a><br>	</button>
+		</section>
+	</div>
 @endsection
