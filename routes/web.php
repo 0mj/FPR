@@ -27,22 +27,34 @@ Route::get('/', function () {
 
 # PONGERS..
 // Route::get('pongers', 'PongerController@index');
-Route::get('pongers/getAllPongers', 'PongerController@getAllPongers');
-Route::resource('pongers', 'PongerController');
+// Route::view('pongers/getAllPongers', 'pongers.getAllPongers');
+
+
+
+# https://laravel.com/docs/5.5/controllers#restful-partial-resource-routes
+# register many resource controllers at once by passing an array to the resources method:
+Route::resources([
+	'pongers'=> 'PongerController',
+	'leagues'=> 'LeagueController',
+	'bracket'=> 'BracketController',
+	'about'  => 'BracketController@about',
+]);
+
+
 
 # LEAGUES..
 // Route::get('leagues', 'LeagueController@index');
-Route::resource('leagues', 'LeagueController');
+// Route::resource('leagues', 'LeagueController');
 
 # BRACKET..
 // Route::get('bracket', 'BracketController@index');
-Route::get('about', 'BracketController@about');
+// Route::get('about', 'BracketController@about');
 
 
 
 
 # PONGERS ALL TEST..
-	// Route::get('foo', function(){	return 'hello world'; 	});
+	Route::get('foo', function(){	return 'hello world'; 	});
 	// Route::get('/', 'PongerController@getAllPongers');
 	// Route::get('/getAllpongers', 'PongerController@getAllPongers');
 	
