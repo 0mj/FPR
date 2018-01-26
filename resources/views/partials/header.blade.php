@@ -30,9 +30,6 @@ p.nav-vertical-center {
         	<a class="navbar-link" href="{{ URL::to('/bracket') }}">BRACKET</a>
 		</p>
 
-		<!-- <p class="navbar-text nav-vertical-center">
-        	<small><a class="navbar-link" href="{{ route('pongbracket.about') }}">about</a></small>
-		</p> -->
 
    </div>
 </nav>
