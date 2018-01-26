@@ -10,6 +10,21 @@
 <br> -->
 
 <h1>{{ $title }}</h1>
+<pre>
+==============================
+IN DEVELOPMENT ===============
+
+This bracket is in development.
+Idea is to allow pongers to be 
+added. Then as they advance in 
+the bracket it updates their
+career wins / losses etc.. 
+==============================
+
+
+
+</pre>
+
 <main id="tournament">
 	<ul class="round round-1">
 		<li class="spacer">&nbsp;</li>
