@@ -8,8 +8,14 @@
 
     <!-- Bootstrap -->
     <!-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> -->
+    <link rel="stylesheet" type="text/css" href="{{ URL::to('css/footer.css')}}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style type="text/css">
+        
+
+
+    </style>
   </head>
   <body>
     <!-- $errors is a global variable which is a collection of errors. -->
@@ -34,6 +40,7 @@
     </main>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+@include('partials.footer')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   </body>
 </html>
