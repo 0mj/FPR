@@ -1,4 +1,11 @@
 @extends('layouts.app')
+@php
+
+
+
+@endphp
+
+@section('title', 'Friends of Pong')
 
 @section('main')
 
@@ -18,23 +25,4 @@
         </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @endsection
