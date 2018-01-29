@@ -10,7 +10,9 @@
 @section('main')
 
     <div class="row">
-        <div class="col-md-6">
+
+
+        <div class="col-md-9">
             
             <h1>Friends of Pong</h1>
             <blockquote>Ping Pong "LEAGUES", "PONGERS", rankings and more.</blockquote>
@@ -23,6 +25,14 @@
 
             
         </div>
+         <div class="col-md-3">
+            
+                <button type="button" class="btn btn-info btn-lg btn-block">PONGERS</button>
+                <button type="button" class="btn btn-default btn-lg btn-block">LEAGUES</button>
+                
+
+        </div>
+
 
     </div>
 @endsection

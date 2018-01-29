@@ -2,57 +2,36 @@
 @section('main')
 
 
-<!-- <div class="row">
-    <div class="col-md-4">
-
-	<ul>
-		@foreach($pongers as $ponger)
-			<li>
-				<a href="{{ route('pongers.show', $ponger) }}">
-					{{ $ponger->first_name . ' ' . $ponger->last_name . ' ' . $ponger->state }}
-				</a>
-				<small><a href="{{ route('pongers.edit', $ponger) }}">edit</a></small>
-			</li>
-		@endforeach
-	</ul>
-
-	{{ $pongers->links() }}
-
-	</div>
-
-	<div class="col-md-4"></div>
-	<div class="col-md-4">
-		
-		
-		
-	</div>
-
-</div> -->
 
 
-    <h1 class="ml-1">PONGERS</h1>
+<h1 class="ml-1">PONGERS</h1>
     <div class="row justify-content-center">
         @foreach ($pongers as $ponger)
+            @php
+            $identicon = new \Identicon\Identicon();
+            $imageDataUri = $identicon->getImageDataUri($ponger->id);
+            @endphp
             <section class="col-md-4 pb-3">
                 <div class="card">
                     <a href="{{ route('pongers.show', $ponger) }}">
-                    	<img class="card-img-top p-2" src="{{ asset('img/ponger_image_na.png') }}" height="180" width="180" />
+                    	<img class="card-img-top p-2" src="{{ $imageDataUri }}" height="100" width="100" />
                     </a>
                     <ul class="card-block list-unstyled">
                         <li class="pull-left">
                             <a href="{{ route('pongers.show', $ponger) }}">
-                                {{ $ponger->first_name . ' ' . $ponger->last_name . ' ' . $ponger->state }}
+                                {{ $ponger->first_name . ' ' . $ponger->last_name }}
                             </a>
                         </li>
                         <li class="pull-right">
-                            <a href="{{ route('pongers.edit', $ponger) }}"><span class="fa fa-pencil" aria-hidden="true"></span></a>
+                            <a href="{{ route('pongers.edit', $ponger) }}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
                         </li>
                         <li class="pull-right">
                             <form action="{{ route('pongers.destroy', $ponger) }}" method="post">
                                 {{ csrf_field() }}
                                 {{ method_field('delete') }}
-                                <button class="fa fa-trash btn-link text-danger" type="submit"></button>
-                          </form>
+                                <button class="glyphicon glyphicon-remove-sign" type="submit"></button>
+                                
+                            </form>
                         </li>
                     </ul>
                 </div>
