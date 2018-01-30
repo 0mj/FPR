@@ -27,7 +27,7 @@
         </div>
          <div class="col-md-3">
             
-                <button type="button" class="btn btn-info btn-lg btn-block">PONGERS</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block">PONGERS</button>
                 <button type="button" class="btn btn-default btn-lg btn-block">LEAGUES</button>
                 
 
