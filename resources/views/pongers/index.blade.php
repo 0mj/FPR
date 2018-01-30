@@ -14,7 +14,7 @@
             <section class="col-md-4 pb-3">
                 <div class="card">
                     <a href="{{ route('pongers.show', $ponger) }}">
-                    	<img class="card-img-top p-2" src="{{ $imageDataUri }}" height="100" width="100" />
+                    	<img class="card-img-top p-2" src="{{ $imageDataUri }}" height="150" width="150" />
                     </a>
                     <ul class="card-block list-unstyled">
                         <li class="pull-left">
