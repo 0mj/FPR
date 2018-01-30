@@ -2,7 +2,7 @@
 @section('main')
 
 
-
+{{ error_log($errors) }}
 
 <h1 class="ml-1">PONGERS</h1>
     <div class="row justify-content-center">
@@ -11,7 +11,7 @@
             $identicon = new \Identicon\Identicon();
             $imageDataUri = $identicon->getImageDataUri($ponger->id);
             @endphp
-            
+
             <section class="col-md-4 pb-3">
                 <div class="card">
                     <a href="{{ route('pongers.show', $ponger) }}">
