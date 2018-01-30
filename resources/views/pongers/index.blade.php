@@ -23,13 +23,13 @@
                             </a>
                         </li>
                         <li class="pull-right">
-                            <a href="{{ route('pongers.edit', $ponger) }}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
+                            <!-- <a href="{{ route('pongers.edit', $ponger) }}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a> -->
                         </li>
                         <li class="pull-right">
                             <form action="{{ route('pongers.destroy', $ponger) }}" method="post">
                                 {{ csrf_field() }}
                                 {{ method_field('delete') }}
-                                <button class="glyphicon glyphicon-remove-sign" type="submit"></button>
+                                <!-- <button class="glyphicon glyphicon-remove-sign" type="submit"></button> -->
                                 
                             </form>
                         </li>
