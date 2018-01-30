@@ -11,9 +11,7 @@
             $identicon = new \Identicon\Identicon();
             $imageDataUri = $identicon->getImageDataUri($ponger->id);
             @endphp
-
-                {{ abort(500) }}
-            <h2>{{ $exception->getMessage() }}</h2>
+            
             <section class="col-md-4 pb-3">
                 <div class="card">
                     <a href="{{ route('pongers.show', $ponger) }}">

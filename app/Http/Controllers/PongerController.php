@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Ponger;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
 
 class PongerController extends Controller
