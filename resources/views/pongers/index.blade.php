@@ -2,7 +2,7 @@
 @section('main')
 
 
-{{ error_log($errors) }}
+
 
 <h1 class="ml-1">PONGERS</h1>
     <div class="row justify-content-center">
@@ -22,18 +22,9 @@
                             <a href="{{ route('pongers.show', $ponger) }}">
                                 {{ $ponger->first_name . ' ' . $ponger->last_name }}
                             </a>
+                            
                         </li>
-                        <li class="pull-right">
-                            <a href="{{ route('pongers.edit', $ponger) }}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
-                        </li>
-                        <li class="pull-right">
-                            <form action="{{ route('pongers.destroy', $ponger) }}" method="post">
-                                {{ csrf_field() }}
-                                {{ method_field('delete') }}
-                                <button class="glyphicon glyphicon-remove-sign" type="submit"></button>
-                                
-                            </form>
-                        </li>
+                      
                     </ul>
                 </div>
             </section>
@@ -45,7 +36,7 @@
     <div class="row justify-content-center">
 		<section class="col">
 			<button type="submit" class="btn ">
-			<a href="{{route('pongers.create')}} ">Create New Ponger</a><br>	</button>
+			<a href="{{route('pongers.create')}} ">Create New Ponger</a></button>
 		</section>
 	</div>
 @endsection
