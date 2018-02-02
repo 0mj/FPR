@@ -26,8 +26,10 @@ Route::get('/', function () {
 })->name('index.index');
 
 # PONGERS..
-// Route::get('pongers', 'PongerController@index');
+// Route::get('pongers/getAllPongers', 'PongerController@getAllPongers');
+// Route::view('pongers/getAllPongers', 'PongerController@getAllPongers');
 // Route::view('pongers/getAllPongers', 'pongers.getAllPongers');
+
 
 
 
@@ -37,9 +39,11 @@ Route::resources([
 	'pongers'=> 'PongerController',
 	'leagues'=> 'LeagueController',
 	'bracket'=> 'BracketController',
-	'about'  => 'BracketController@about',
+	
 ]);
-
+Route::get('pong', function () {
+	    return view('pongers.getAllpongers');
+	});
 
 
 # LEAGUES..
@@ -47,14 +51,14 @@ Route::resources([
 // Route::resource('leagues', 'LeagueController');
 
 # BRACKET..
-// Route::get('bracket', 'BracketController@index');
-// Route::get('about', 'BracketController@about');
+Route::get('bracket', 'BracketController@index');
+Route::get('about', 'BracketController@about');
 
 
 
 
 # PONGERS ALL TEST..
-	Route::get('foo', function(){	return 'hello world'; 	});
+	// Route::get('foo', function(){	return 'hello world'; 	});
 	// Route::get('/', 'PongerController@getAllPongers');
 	// Route::get('/getAllpongers', 'PongerController@getAllPongers');
 	

@@ -1,14 +1,11 @@
 @extends('layouts.app')
-@php
 
 
-
-@endphp
 
 @section('title', 'Friends of Pong')
 
 @section('main')
-
+    
     <div class="row">
 
 
@@ -25,14 +22,9 @@
 
             
         </div>
-         <div class="col-md-3">
+        <div class="col-md-3">
+
             
-                <button type="button" class="btn btn-primary btn-lg btn-block">PONGERS</button>
-                <button type="button" class="btn btn-default btn-lg btn-block">LEAGUES</button>
-                
-
         </div>
-
-
     </div>
 @endsection
