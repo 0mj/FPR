@@ -42,9 +42,13 @@ Route::resources([
 	
 ]);
 Route::get('pong', function () {
-	    return view('pongers.getAllpongers');
+	    return view('pongers.test');
 	});
 
+// Route::view('badgeviewer/', 'badgeviewer');
+Route::get('badgeviewer', function () {
+	    return view('badgeviewer.index');
+	});
 
 # LEAGUES..
 // Route::get('leagues', 'LeagueController@index');
@@ -63,9 +67,9 @@ Route::get('about', 'BracketController@about');
 	// Route::get('/getAllpongers', 'PongerController@getAllPongers');
 	
 	# dis work! :)
-	// Route::get('/', function () {
-	//     return view('pongers.getAllpongers');
-	// });
+	Route::get('/', function () {
+	    return view('pongers.getAllpongers');
+	});
 
 
 
