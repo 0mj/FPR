@@ -1,6 +1,8 @@
 /node_modules
 /public/hot
 /public/storage
+/public/img/pongers_blades
+/public/img/pongers_outdoor_tables
 /storage/*.key
 /vendor
 /.idea
