@@ -9,7 +9,17 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::to('css/footer.css')}}">
    <style type="text/css">
-        
+      
+      .carousel-inner > .item > img {
+        width:640px;
+        height:360px;
+      }
+
+      a, #footerEmail {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
 
 
     </style>

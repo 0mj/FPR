@@ -1,12 +1,4 @@
-<style type="css">
-  
-p.nav-vertical-center {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 30px;
-}
 
-</style>
 <nav class="navbar navbar-default navbar-static-top">
   
   <div class="container">

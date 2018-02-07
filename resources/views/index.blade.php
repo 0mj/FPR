@@ -6,6 +6,8 @@
 
 @section('main')
     
+
+
     <div class="row">
         <div class="col-md-6">
             <h1>Friends of Pong</h1>
@@ -40,6 +42,7 @@
 
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
