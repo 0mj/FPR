@@ -3,6 +3,7 @@
 
 <footer class="footer">
     <div class="container">
-        <span class="">{{ date('Y-M-d h:i A',strtotime('now'))}} UTC - Friends of Pong.</span>
+        <br>
+        <span class="">{{ date('d M Y H:i',strtotime('now'))}} UTC <a href="mailto:MattJamisonXyz@gmail.com" id="footerEmail">@Matt</a></span>
     </div>
 </footer>
