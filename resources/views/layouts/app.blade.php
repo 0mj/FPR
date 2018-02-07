@@ -15,11 +15,7 @@
         height:360px;
       }
 
-      a, #footerEmail {
-        color: #ffffff;
-        text-decoration: none;
-      }
-
+    
 
 
     </style>
