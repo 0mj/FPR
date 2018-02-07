@@ -17,3 +17,8 @@ body {
   background-color: #3197d1;
   color: blanchedalmond;
 }
+
+#footerEmail {
+  color: #ffffff;
+  text-decoration: none;
+}
