@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-md-6">
             <h1>Friends of Pong</h1>
-            <blockquote>Ping Pong "LEAGUES", "PONGERS", rankings and more.</blockquote>
+            <blockquote>Pthis is safety</blockquote>
                         
             <p>Friends of Pong is a demonstration of my full stack capabilities. This site was stood up using Heroku (AWS), Git, Laravel PHP Framework, MySQL, jQuery, and Bootstrap. Code on <a href="https://github.com/0mj/FPR">Github</a>.</p>
             <p>It is fully functional allowing users the ability to create, update, read and delete (CRUD) pongers and leagues.</p>
@@ -45,6 +45,6 @@
         </div>
     </div>
 
-{{ refresh() }}
+
 @endsection
 

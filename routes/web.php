@@ -21,16 +21,20 @@
 */
 
 
-Route::get('/', function () {
-    return view('index');
-})->name('index.index');
+// Route::get('/', function () {
+//     return view('index');
+// })->name('index.index');
+
+
 
 # PONGERS..
 // Route::get('pongers/getAllPongers', 'PongerController@getAllPongers');
 // Route::view('pongers/getAllPongers', 'PongerController@getAllPongers');
 // Route::view('pongers/getAllPongers', 'pongers.getAllPongers');
 
-
+Route::get('/', function () {
+     return view('safety');
+ });
 
 
 # https://laravel.com/docs/5.5/controllers#restful-partial-resource-routes
