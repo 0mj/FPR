@@ -7,10 +7,7 @@
 @section('main')
     
     <div class="row">
-
-
-        <div class="col-md-9">
-            
+        <div class="col-md-6">
             <h1>Friends of Pong</h1>
             <blockquote>Ping Pong "LEAGUES", "PONGERS", rankings and more.</blockquote>
                         
@@ -19,12 +16,32 @@
             <p>Within the "LEAGUES" section you can associate "PONGERS" to a league by selecting the radio box next to their name. Then select the update button at the bottom. Revisit that league again and you will see the changes saved.</p>
             <p>Give it a shot.  Add a ponger.  Then add them to a league.
             Delete them etc.. </p>
-
-            
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="{{asset('img/pongers_icons/boyPonger.png')}}" width="430" height="530" >
+                        <div class="carousel-caption">
 
-            
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                      <img src="{{asset('img/pongers_icons/game-table-clipart-1.png')}}" alt="...">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="{{asset('img/pongers_icons/ping-pong-clip-art-4.png')}}" alt="..." width="360" height="260" >
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 @endsection
