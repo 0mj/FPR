@@ -66,10 +66,10 @@ Route::get('about', 'BracketController@about');
 	// Route::get('/', 'PongerController@getAllPongers');
 	// Route::get('/getAllpongers', 'PongerController@getAllPongers');
 	
-	# dis work! :)
-	Route::get('/', function () {
-	    return view('pongers.getAllpongers');
-	});
+	# THIS WORKS.
+	// Route::get('/', function () {
+	//     return view('pongers.getAllpongers');
+	// });
 
 
 
