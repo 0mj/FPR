@@ -23,25 +23,29 @@
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="{{asset('img/pongers_icons/boyPonger.png')}}" >
+                        <img src="{{asset('img/pongers_flickr/carl_dyer_barca_spain.JPG')}}" >
+                        <!-- <div id="lorempixel"></div> -->
                         <div class="carousel-caption">
 
                         </div>
                     </div>
                     
                     <div class="item">
-                      <img src="{{asset('img/pongers_icons/game-table-clipart-1.png')}}"    >
+                      <img src="{{asset('img/pongers_flickr/dcrescenti.JPG')}}"    >
+                      <!-- <div id="lorempixel2"></div> -->
                         <div class="carousel-caption">
 
                         </div>
                     </div>
                     
                     <div class="item">
-                        <img src="{{asset('img/pongers_icons/ping-pong-clip-art-4.png')}}" alt="..."   >
+                        <img src="{{asset('img/pongers_flickr/Stefan_Hillgruber_bw.JPG')}}" alt="..."   >
+                        <!-- <div id="lorempixel3"></div> -->
                         <div class="carousel-caption">
 
                         </div>
                     </div>
+                    
                     
                 </div>
             </div>
