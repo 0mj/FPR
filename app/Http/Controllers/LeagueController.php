@@ -41,6 +41,17 @@ class LeagueController extends Controller
         $description = $request->input('description');
         $time = $request->input('time');
         $league_id = $request->input('league_id');
+        $league = [
+            'title' => $title,
+            'description' => $description,
+            'time' => $time,
+            'league_id' => $league_id,
+            'view_league' => [
+                'href' => 'api/v1/league/1/',
+                'method' => 'GET'
+            ]
+        ];
+
         return "IT WORKS!";
     }
 
