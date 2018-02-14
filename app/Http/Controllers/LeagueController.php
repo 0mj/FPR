@@ -37,6 +37,13 @@ class LeagueController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'title' => 'required',
+            'description' => 'required',
+            'time' => 'required|date_format:YmdHie',
+            'league_id' => 'required'
+        ]);
+
         $title = $request->input('title');
         $description = $request->input('description');
         $time = $request->input('time');
