@@ -37,7 +37,29 @@ class LeagueController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'title' => 'required',
+            'description' => 'required',
+            'time' => 'required|date_format:YmdHie',
+            'league_id' => 'required'
+        ]);
+
+        $title = $request->input('title');
+        $description = $request->input('description');
+        $time = $request->input('time');
+        $league_id = $request->input('league_id');
+        $league = [
+            'title' => $title,
+            'description' => $description,
+            'time' => $time,
+            'league_id' => $league_id,
+            'view_league' => [
+                'href' => 'api/v1/league/1/',
+                'method' => 'GET'
+            ]
+        ];
+
+        return "IT WORKS!";
     }
 
     /**
