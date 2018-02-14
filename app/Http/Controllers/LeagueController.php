@@ -37,7 +37,11 @@ class LeagueController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $title = $request->input('title');
+        $description = $request->input('description');
+        $time = $request->input('time');
+        $league_id = $request->input('league_id');
+        return "IT WORKS!";
     }
 
     /**

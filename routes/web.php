@@ -78,3 +78,8 @@ Route::get('about', 'BracketController@about');
 
 
 
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

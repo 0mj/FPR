@@ -22,7 +22,13 @@
         	<a class="navbar-link" href="{{ URL::to('/bracket') }}">BRACKET</a>
 		</p>
 
-
+		<p class="navbar-text nav-vertical-center">
+			<a href="{{ route('login') }}">Login</a>
+		</p>
+    	
+    	<p class="navbar-text nav-vertical-center">
+    		<a href="{{ route('register') }}">Register</a>
+    	</p>
 
    </div>
 </nav>
