@@ -23,11 +23,11 @@
 		</p>
 
 		<p class="navbar-text nav-vertical-center">
-			<a href="{{ route('login') }}">Login</a>
+			<a class="navbar-link" href="{{ route('login') }}">Login</a>
 		</p>
     	
     	<p class="navbar-text nav-vertical-center">
-    		<a href="{{ route('register') }}">Register</a>
+    		<a class="navbar-link"  href="{{ route('register') }}">Register</a>
     	</p>
 
    </div>
