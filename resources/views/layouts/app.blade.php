@@ -34,16 +34,16 @@
 
     @endif
 
-    @include('partials.header')
+    <!-- @include('partials.header') -->
     <main class="container pt-4">
         @if (session('status'))
             <div class="alert alert-success">
                 {{ session('status') }}
             </div>
         @endif
-        @yield('main')
+        
     </main>
-@include('partials.footer')
+
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
@@ -57,10 +57,26 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                    <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
+                        <!-- Branding Image -->
+                     <!--    <p class="navbar-text nav-vertical-center">
+                            <a class="navbar-brand" href="{{ url('/') }}">
+                                {{ config('app.name', 'Laravel') }}
+                            </a>
+                        </p> -->
+                        <p class="navbar-text nav-vertical-center">     
+                            <a class="navbar-link" href="{{ URL::to('/') }}">
+                                <img src="{{asset('img/table_tennis_paddle_and_ball.png')}}" height="64" width="64">
+                            </a>
+                        </p>        
+                        <p class="navbar-text nav-vertical-center">
+                        <a class="navbar-link" href="{{ route('pongers.index') }}">PONGERS</a>
+                        </p>
+                        <p class="navbar-text nav-vertical-center">
+                        <a class="navbar-link" href="{{ route('leagues.index') }}">LEAGUES</a>
+                        </p>
+                        <p class="navbar-text nav-vertical-center">
+                        <a class="navbar-link" href="{{ URL::to('/bracket') }}">BRACKET</a>
+                        </p>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -101,7 +117,20 @@
             </div>
         </nav>
 
+        <div class="container">
+            
+            
+            <div class="row">
+                
+                @yield('main')
+                
+
+
+            </div>
+        </div>
         
+
+        @include('partials.footer')
     </div>
 
     <!-- Scripts -->
@@ -113,17 +142,17 @@
     
     <script>
       
-      jQuery(document).ready(function() { 
+      // jQuery(document).ready(function() { 
         
-        rndm_lorempixel();
-        
-        //  X-CSRF-TOKEN ??.
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-      });
+      //   rndm_lorempixel();
+        // UNDERSTAND WHATS GOIG ON HERE???
+      //   //  X-CSRF-TOKEN ??.
+      //   $.ajaxSetup({
+      //       headers: {
+      //           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      //       }
+      //   });
+      // });
     </script>
 </body>
 </html>
