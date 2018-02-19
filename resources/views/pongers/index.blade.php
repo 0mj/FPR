@@ -5,6 +5,8 @@
 
 
 <h1 class="ml-1">meet the PONGERS</h1>
+   
+    
     <div class="row justify-content-center">
         @foreach ($pongers as $ponger)
             @php
@@ -40,10 +42,12 @@
 
         
     </div>
+
     <div class="row justify-content-center">
-		<section class="col">
-			<button type="submit" class="btn ">
-			<a href="{{route('pongers.create')}} ">Create New Ponger</a></button>
-		</section>
-	</div>
+        <section class="col">
+            <button type="submit" class="btn ">
+            <a href="{{route('pongers.create')}} ">Create New Ponger</a></button>
+        </section>
+    </div>
+    
 @endsection
