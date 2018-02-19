@@ -82,4 +82,8 @@ Route::get('about', 'BracketController@about');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
+Route::post('login', [
+	'uses' => 'SigninController@signin',
+	'as' => 'auth.signin'
+]);
