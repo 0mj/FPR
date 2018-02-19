@@ -24,7 +24,10 @@ class AuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerPolicies();
-
-        //
+        # USER can update only if they created bracket
+        Gate::define('update-bracket', function($user, $bracket){
+            return $user->id == $bracket->user_id;
+        });
+        
     }
 }
