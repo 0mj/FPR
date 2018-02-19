@@ -27,7 +27,7 @@
 		</p>
     	
     	<p class="navbar-text nav-vertical-center">
-    		<a class="navbar-link"  href="{{ route('register') }}">Register</a>
+
     	</p>
 
    </div>
