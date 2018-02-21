@@ -122,19 +122,24 @@
         <div class="container">
             
             
-            <div class="row">
+            
                 
                 @yield('main')
                 
 
 
-            </div>
+            
         </div>
         
 
         
-    </div>
+    </div> 
+    <!-- END APP DIV -->
+
+
     @include('partials.footer')
+    
+
     <!-- Scripts -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -147,7 +152,7 @@
       // jQuery(document).ready(function() { 
         
       //   rndm_lorempixel();
-        // UNDERSTAND WHATS GOIG ON HERE???
+        // UNDERSTAND WHATS GOING ON HERE???
       //   //  X-CSRF-TOKEN ??.
       //   $.ajaxSetup({
       //       headers: {
