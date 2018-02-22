@@ -34,7 +34,7 @@ $imageDataUri = $identicon->getImageDataUri($ponger->id);
 						<form action="{{ route('pongers.destroy', $ponger) }}" method="post">
 						    {{ csrf_field() }}
 						    {{ method_field('delete') }}
-						    <button class="btn btn-danger" type="submit">DELETE</button>
+						    <!-- <button class="btn btn-danger" type="submit">DELETE</button> -->
 						</form>
 					</span>
 
