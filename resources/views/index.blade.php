@@ -44,7 +44,7 @@
            
             <p>Friends of Pong..</p>
             <ul>
-                <li<a href="http://php.net/manual/en/">PHP 7</a>
+                <li><a href="http://php.net/manual/en/">PHP 7</a>
                     <ul>
                         <li><a href="https://getcomposer.org/">Composer</a></li>
                         <li><a href="https://laravel.com/docs/5.5">Laravel 5.5</a></li>
@@ -133,7 +133,7 @@
            
             <h3>What Next?</h3>
                 <ul>
-                    <li><strong>bracket is currently my main development focus</strong></li>
+                    <li><strong>THE BRACKET!</strong> is currently my main focus</li>
                     <li>logic to update the pongers win and loss records as tournaments are saved.</li>
                     <li>Register, login and modify their profile</li>
                     <li>Create bracket</li>
