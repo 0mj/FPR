@@ -11,6 +11,8 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+/setupSQL
+/NOTES
 .env
 /.vscode
 /config/database.php
