@@ -40,7 +40,7 @@ Route::get('/', function () {
 Route::resources([
 	'pongers'=> 'PongerController',
 	'leagues'=> 'LeagueController',
-	'bracket'=> 'BracketController',
+	'brackets'=> 'BracketController',
 	
 ]);
 Route::get('pong', function () {
