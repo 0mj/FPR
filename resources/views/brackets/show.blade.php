@@ -13,6 +13,6 @@
 	</ul>
 
 <span>
-	<!-- <a href="{{ route('brackets.edit', $bracket) }}" class="btn btn-primary">Edit</a> -->
+	<a href="{{ route('brackets.edit', $bracket) }}" class="btn btn-primary">Edit</a>
 </span>
 @endsection 

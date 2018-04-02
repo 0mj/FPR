@@ -16,7 +16,7 @@ class CreateBracketsTable extends Migration
         Schema::create('brackets', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->string('created_by_id');
+            $table->integer('created_by_id');
             $table->string('tournament_name')->unique();
             $table->integer('amount_of_competitors');
             $table->integer('amount_of_rounds');

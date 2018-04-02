@@ -10,9 +10,7 @@
 	| contains the "web" middleware group. Now create something great!
 	|
 
-	 Route::get('bracket', function () {
-	     return view('pongbracket.bracket');
-	 });
+	 
 
 	 Route::get('/', function () {
 	     return '<h1>' . strtotime('now') . '</h1>';
@@ -51,6 +49,10 @@ Route::get('pong', function () {
 Route::get('badgeviewer', function () {
 	    return view('badgeviewer.index');
 	});
+
+Route::get('pongbracket', function () {
+	     return view('pongbracket.bracket');
+	 });
 
 # LEAGUES..
 // Route::get('leagues', 'LeagueController@index');

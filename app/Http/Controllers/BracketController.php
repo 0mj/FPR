@@ -67,7 +67,28 @@ class BracketController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'tournament_name' => 'bail|required|max:255',
+            // 'created_by_id' => 'bail|required',
+            'amount_of_competitors' => 'bail|required',
+            // 'amount_of_rounds' => 'bail|required',
+            // 'single_elimination'=> 'bail|required',
+            ]);
+
+
+        /*
+            $table->integer('created_by_id');
+            $table->string('tournament_name')->unique();
+            $table->integer('amount_of_competitors');
+            $table->integer('amount_of_rounds');
+            $table->string('single_elimination');
+
+
+
+
+        */
+        Bracket::create($request->all());
+        return redirect('brackets');
     }
 
     /**
@@ -89,7 +110,7 @@ class BracketController extends Controller
      */
     public function edit(Bracket $bracket)
     {
-        //
+       return view('brackets.edit', ['bracket' => $bracket]);
     }
 
     /**
@@ -101,7 +122,8 @@ class BracketController extends Controller
      */
     public function update(Request $request, Bracket $bracket)
     {
-        //
+        $bracket->update($request->all());
+        return redirect('brackets');
     }
 
     /**

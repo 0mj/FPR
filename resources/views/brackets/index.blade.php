@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('main')
-
+<link rel="stylesheet" type="text/css" href="{{ URL::to('css/flexBox.css')}}">
 
 
 <ul>
@@ -18,5 +18,12 @@
 
 
 
+<!-- <button onclick="myFunction2()" class="button">BUILD BRACKET</button> -->
+<button onclick="buildCompleteBracket()" class="button">buildCompleteBracket</button>
 
-@endsection
+
+
+  <div class="inner"></div>
+
+
+@endsection	
