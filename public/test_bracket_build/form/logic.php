@@ -5,7 +5,7 @@
 
 		$amt_of_games = $amount_of_teams / 2;
 
-		for ($i = 1; $i <= $amt_of_games; $i++) { 
+		for ($i = 1; $i <= $amount_of_teams; $i++) { 
 			echo 	'<li class="spacer">&nbsp;</li>
 					<li class="game game-top winner"></li>
 					<li class="game game-spacer">&nbsp;</li>
