@@ -1,8 +1,8 @@
 <?php 
 	$a = $_POST['amount']; 
 	include 'logic.php';
+	
 ?>
-
 
 
 <title>bracket voila!</title>

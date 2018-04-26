@@ -21,7 +21,7 @@
 		*/
 
 
-	$a = $_GET['amount']; mypr(whatWeNeedToKnow($a));
+	// $a = $_GET['amount']; mypr(whatWeNeedToKnow($a));
 
 	function whatWeNeedToKnow($amount_of_teams){
 		
@@ -78,11 +78,28 @@
 	
 	function amountOfBuys($amount_of_teams){
 		#amount of teams that get first round buy..
-		$first_round_buys = array( 5 => 3, 6 => 2, 7 => 1, 9 => 7, 10 => 6, 11 => 5, 12 => 4, 13 => 3, 14 => 2, 15 => 1, 17 => 15, 18 => 14, 19 => 13, 20 => 12, 21 => 11, 22 => 10, 23 => 9, 24 => 8, 25 => 7, 26 => 6, 27 => 5, 28 => 4, 29 => 3, 30 => 2, 31 => 1, 33 => 31, 34 => 30, 35 => 29, 36 => 28, 37 => 27, 38 => 26, 39 => 25, 40 => 24, 41 => 23, 42 => 22, 43 => 21, 44 => 20, 45 => 19, 46 => 18, 47 => 17, 48 => 16, 49 => 15, 50 => 14, 51 => 13, 52 => 12, 53 => 11, 54 => 10, 55 => 9, 56 => 8, 57 => 7, 58 => 6, 59 => 5, 60 => 4, 61 => 3, 62 => 2, 63 => 1 );
+		/*
+			remove the array and math it up..
+			x > 4 && x < 8   example( 5 > 4 && 5 < 8  firstRoundBuys=3)
+			x > 8 && x < 16
+			x > 16 && x < 32
+			x > 32 && x < 64
+			x > 64 && x < 128
+			x > 128 && x < 256
+		*/
+		$amount_of_teams >= 5 && $amount_of_teams < 8 ? $first_round_buys = 8 - $amount_of_teams : $x='';
+		$amount_of_teams >= 8 && $amount_of_teams < 16 ? $first_round_buys = 16 - $amount_of_teams : $x='';
+		$amount_of_teams >= 16 && $amount_of_teams < 32 ? $first_round_buys = 32 - $amount_of_teams : $x='';
+		$amount_of_teams >= 32 && $amount_of_teams < 64 ? $first_round_buys = 64 - $amount_of_teams : $x='';
+		// 
+		return $first_round_buys;
 
-		if (array_key_exists($amount_of_teams, $first_round_buys)) {
-			return $first_round_buys["$amount_of_teams"];
-		}
+		// $first_round_buys = array( 5 => 3, 6 => 2, 7 => 1, 9 => 7, 10 => 6, 11 => 5, 12 => 4, 13 => 3, 14 => 2, 15 => 1, 17 => 15, 18 => 14, 19 => 13, 20 => 12, 21 => 11, 22 => 10, 23 => 9, 24 => 8, 25 => 7, 26 => 6, 27 => 5, 28 => 4, 29 => 3, 30 => 2, 31 => 1, 33 => 31, 34 => 30, 35 => 29, 36 => 28, 37 => 27, 38 => 26, 39 => 25, 40 => 24, 41 => 23, 42 => 22, 43 => 21, 44 => 20, 45 => 19, 46 => 18, 47 => 17, 48 => 16, 49 => 15, 50 => 14, 51 => 13, 52 => 12, 53 => 11, 54 => 10, 55 => 9, 56 => 8, 57 => 7, 58 => 6, 59 => 5, 60 => 4, 61 => 3, 62 => 2, 63 => 1 );
+
+		// if (array_key_exists($amount_of_teams, $first_round_buys)) {
+		// 	return $first_round_buys["$amount_of_teams"];
+		// }
+
 	}
 
 	
