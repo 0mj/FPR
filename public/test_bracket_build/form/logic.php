@@ -37,37 +37,52 @@
 		$return['amount_of_teams_first_round'] = $amount_of_teams_first_round;
 		$return['amount_of_teams_first_round_buys'] = $buys;
 		$return['amount_of_teams_second_round']  = ($amount_of_teams_first_round / 2 ) + $buys;
-		$return['amount_of_teams_third_round']   = $return['amount_of_teams_second_round'] / 2;
-		$return['amount_of_teams_fourth_round']  = $return['amount_of_teams_second_round'] / 4;
-		$return['amount_of_teams_fifth_round']   = $return['amount_of_teams_second_round'] / 8;
-		$return['amount_of_teams_sixth_round']   = $return['amount_of_teams_second_round'] / 16;
-		$return['amount_of_teams_seventh_round'] = $return['amount_of_teams_second_round'] / 32;
+		($return['amount_of_teams_second_round'] / 2) >= 2 ? $return['amount_of_teams_third_round']   = $return['amount_of_teams_second_round'] / 2 : '';
+		($return['amount_of_teams_second_round'] / 4) >= 2 ? $return['amount_of_teams_fourth_round']  = $return['amount_of_teams_second_round'] / 4 : '';
+		($return['amount_of_teams_second_round'] / 8) >= 2 ? $return['amount_of_teams_fifth_round']   = $return['amount_of_teams_second_round'] / 8 : '';
+		($return['amount_of_teams_second_round'] / 16) >= 2 ? $return['amount_of_teams_sixth_round']   = $return['amount_of_teams_second_round'] / 16 : '';
+		($return['amount_of_teams_second_round'] / 32) >= 2 ? $return['amount_of_teams_seventh_round'] = $return['amount_of_teams_second_round'] / 32 : '';
 		return $return;
 	}
 
 
 
-	function printBracket($amount_of_teams){	
-		$amt_of_games = $amount_of_teams / 2;
-		echo $amount_of_teams.'<br><br>';
-		for ($i = 1; $i <= $amt_of_games; $i++) { 
-					echo 	'<li class="spacer">&nbsp;</li>
-							<li class="game game-top winner"></li>
-							<li class="game game-spacer">&nbsp;</li>
-							<li class="game game-bottom "></li>';
-			}
-				echo 	'<li class="spacer">&nbsp;</li>';
+	function printBracket($amount_of_teams, $buy = false){	
 		
+		
+
+		$amt_of_games = $amount_of_teams / 2;
+		
+
+		if($amount_of_teams > 1){
+			if($buy >= 1 ) {echo '<strong>('.$buy.' buys)</strong>'; }
+			else {echo '('.$amount_of_teams.' teams)';}
+
+			for ($i = 1; $i <= $amt_of_games; $i++) { 
+						echo 	'<li class="spacer">&nbsp;</li>
+								<li class="game game-top winner"></li>
+								<li class="game game-spacer">&nbsp;</li>
+								<li class="game game-bottom "></li>';
+				}
+					echo 	'<li class="spacer">&nbsp;</li>';
+		}
+		unset($buy);
 	}
 	
 	
 	function amountOfBuys($amount_of_teams){
-	
+		
+		$ideal = array(8,16,32,64,128);
+		if(in_array($amount_of_teams, $ideal))
+		{
+			return;
+		}
+		
 		$amount_of_teams >= 5 && $amount_of_teams < 8 ? $first_round_buys = 8 - $amount_of_teams : $x='';
-		// $amount_of_teams >= 8 && $amount_of_teams < 16 ? $first_round_buys = 16 - $amount_of_teams : $x='';
-		// $amount_of_teams >= 16 && $amount_of_teams < 32 ? $first_round_buys = 32 - $amount_of_teams : $x='';
-		// $amount_of_teams >= 32 && $amount_of_teams < 64 ? $first_round_buys = 64 - $amount_of_teams : $x='';
-		// $amount_of_teams >= 64 && $amount_of_teams < 128 ? $first_round_buys = 128 - $amount_of_teams : $x='';
+		$amount_of_teams >= 8 && $amount_of_teams < 16 ? $first_round_buys = 16 - $amount_of_teams : $x='';
+		$amount_of_teams >= 16 && $amount_of_teams < 32 ? $first_round_buys = 32 - $amount_of_teams : $x='';
+		$amount_of_teams >= 32 && $amount_of_teams < 64 ? $first_round_buys = 64 - $amount_of_teams : $x='';
+		$amount_of_teams >= 64 && $amount_of_teams < 128 ? $first_round_buys = 128 - $amount_of_teams : $x='';
 		
 		return $first_round_buys;
 	}
