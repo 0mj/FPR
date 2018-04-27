@@ -46,77 +46,32 @@
 	}
 
 
-	function teamBuy($amount_of_teams){
-
-		$return = [];
-		if($amount_of_teams % 2 == 0 )
-		{
-			// printBracket();
-		}
-		else
-		{
-			// someGetsABuy();
-		}
-		
-		return $return;
-	}
-
 
 	function printBracket($amount_of_teams){	
 		$amt_of_games = $amount_of_teams / 2;
-		
-		# even teams print even style bracket..
-		// if($amount_of_teams % 2 == 0)
-		// {
-			for ($i = 1; $i <= $amt_of_games; $i++) { 
+		echo $amount_of_teams.'<br><br>';
+		for ($i = 1; $i <= $amt_of_games; $i++) { 
 					echo 	'<li class="spacer">&nbsp;</li>
 							<li class="game game-top winner"></li>
 							<li class="game game-spacer">&nbsp;</li>
 							<li class="game game-bottom "></li>';
 			}
 				echo 	'<li class="spacer">&nbsp;</li>';
-		// }
-		// else
-		// {
-		// 	printBuyBracket();
-		// }
+		
 	}
 	
 	
 	function amountOfBuys($amount_of_teams){
 	
 		$amount_of_teams >= 5 && $amount_of_teams < 8 ? $first_round_buys = 8 - $amount_of_teams : $x='';
-		$amount_of_teams >= 8 && $amount_of_teams < 16 ? $first_round_buys = 16 - $amount_of_teams : $x='';
-		$amount_of_teams >= 16 && $amount_of_teams < 32 ? $first_round_buys = 32 - $amount_of_teams : $x='';
-		$amount_of_teams >= 32 && $amount_of_teams < 64 ? $first_round_buys = 64 - $amount_of_teams : $x='';
-		$amount_of_teams >= 64 && $amount_of_teams < 128 ? $first_round_buys = 128 - $amount_of_teams : $x='';
-		// 
+		// $amount_of_teams >= 8 && $amount_of_teams < 16 ? $first_round_buys = 16 - $amount_of_teams : $x='';
+		// $amount_of_teams >= 16 && $amount_of_teams < 32 ? $first_round_buys = 32 - $amount_of_teams : $x='';
+		// $amount_of_teams >= 32 && $amount_of_teams < 64 ? $first_round_buys = 64 - $amount_of_teams : $x='';
+		// $amount_of_teams >= 64 && $amount_of_teams < 128 ? $first_round_buys = 128 - $amount_of_teams : $x='';
+		
 		return $first_round_buys;
 	}
 
-	
-	function printFirstRoundBracket($amount_of_teams){
-
-		printBracket($amount_of_teams);
-	}
-
-
-	function printSecondRoundBracket($amount_of_teams){
-		$no_teams_reamaining = $amount_of_teams / 2;
-		// $no_teams_reamaining % 2 == 0 ? printBuyBracket() : $x = '';
-		printBracket($no_teams_reamaining);
-	}
-
-	function printIdealRound($amount_of_teams){
-		$no_teams_reamaining = $amount_of_teams / 2;
-		printBracket($no_teams_reamaining);
-	}
-
-	function printFourthRound($amount_of_teams){
-
-		$no_teams_reamaining = $amount_of_teams / 8;
-		printBracket($no_teams_reamaining);
-	}
 	
 
 	function mypr($x){
