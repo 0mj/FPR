@@ -76,7 +76,7 @@
                         <a class="navbar-link" href="{{ route('leagues.index') }}">LEAGUES</a>
                         </p>
                         <p class="navbar-text nav-vertical-center">
-                        <a class="navbar-link" href="{{ URL::to('/bracket') }}">BRACKET</a>
+                        <a class="navbar-link" href="{{ URL::to('/test_bracket_build/form/') }}">Create a Bracket (in dev)</a>
                         </p>
                         <p class="navbar-text nav-vertical-center">
                             <a class="navbar-link" href="{{ route('brackets.index') }}">Bracket Builder</a>
