@@ -22,7 +22,9 @@
 
 
 	// $a = $_GET['amount']; mypr(whatWeNeedToKnow($a));
-		$a = $_POST['amount']; mypr(whatWeNeedToKnow($a));
+		$a = $_POST['amount']; 
+
+		if(isset($a)) { mypr(whatWeNeedToKnow($a)); } 
 	
 
 
@@ -35,7 +37,7 @@
 		$return['amount_of_teams_for_ideal'] = $amount_of_teams + $buys;
 		$return['amount_of_teams_entered'] = $amount_of_teams;
 		$return['amount_of_teams_first_round'] = $amount_of_teams_first_round;
-		$return['amount_of_teams_first_round_buys'] = $buys;
+		$buys > 0 ? $return['amount_of_teams_first_round_buys'] = $buys : '';
 		$return['amount_of_teams_second_round']  = ($amount_of_teams_first_round / 2 ) + $buys;
 		($return['amount_of_teams_second_round'] / 2) >= 2 ? $return['amount_of_teams_third_round']   = $return['amount_of_teams_second_round'] / 2 : '';
 		($return['amount_of_teams_second_round'] / 4) >= 2 ? $return['amount_of_teams_fourth_round']  = $return['amount_of_teams_second_round'] / 4 : '';
