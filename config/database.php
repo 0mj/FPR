@@ -1,7 +1,7 @@
 <?php
     if(isset(($_SERVER["HTTP_HOST"])))
     {
-        if ($_SERVER["HTTP_HOST"] === "friends-of-pong.herokuapp.com" || $_SERVER["HTTP_HOST"] === "friends-of-pong-staging.herokuapp.com"){
+        if ($_SERVER["HTTP_HOST"] === "qmatt.com" || $_SERVER["HTTP_HOST"] === "friends-of-pong-staging.herokuapp.com"){
                     $dbUrl = parse_url(env("JAWSDB_URL"));    
         }
     }
