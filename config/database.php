@@ -4,6 +4,7 @@
         if ($_SERVER["HTTP_HOST"] === "qmatt.com" || $_SERVER["HTTP_HOST"] === "friends-of-pong-staging.herokuapp.com"){
                     $dbUrl = parse_url(env("JAWSDB_URL"));    
         }
+        else{$dbUrl = parse_url(env("JAWSDB_URL")); }
     }
 
     
