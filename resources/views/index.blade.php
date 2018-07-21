@@ -10,10 +10,10 @@
     <div class="row">
         <!-- Carousel -->
         <div class="col-md-7">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="10000" keyboard="true">
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="{{asset('img/pongers_flickr/carl_dyer_barca_spain.JPG')}}" >
+                        <img src="{{asset('img/pongers_flickr/carl_dyer_barca_spain.JPG')}}" class="img-reponsive" >
                         <!-- <div id="lorempixel"></div> -->
                         <div class="carousel-caption">
 
@@ -21,7 +21,7 @@
                     </div>
                     
                     <div class="item">
-                      <img src="{{asset('img/pongers_flickr/dcrescenti.JPG')}}"    >
+                      <img src="{{asset('img/pongers_flickr/dcrescenti.JPG')}}"   class="img-reponsive" >
                       <!-- <div id="lorempixel2"></div> -->
                         <div class="carousel-caption">
 
@@ -29,7 +29,7 @@
                     </div>
                     
                     <div class="item">
-                        <img src="{{asset('img/pongers_flickr/Stefan_Hillgruber_bw.JPG')}}" alt="..."   >
+                        <img src="{{asset('img/pongers_flickr/Stefan_Hillgruber_bw.JPG')}}" alt="..." class="img-reponsive"  >
                         <!-- <div id="lorempixel3"></div> -->
                         <div class="carousel-caption">
 

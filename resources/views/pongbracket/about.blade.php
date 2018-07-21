@@ -6,11 +6,11 @@
         <div class="col">
             
             <h1>{{ $title }}</h1>
-            <h3>Featuring..</h3>
-            <ul class="list-group">
+            
+            <ul class="list-unstyled">
 	            @if(count($features) > 0 )	
 	            	@foreach($features as $feature)
-	            		<li class="list-group-item">
+	            		<li>
 	            			{{$feature}}
 	            		</li>
 

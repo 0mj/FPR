@@ -25,13 +25,15 @@ class BracketController extends Controller
 
     public function about()
     {
-        $title = 'About the Family Pong records.';
+        $title = 'About qMatt';
         $features = array(
-                        'Ponger Family Records.'
-                        ,'Ponger Individual Records'
-                        ,'Ponger Doubles Records'
-                        ,'Ponger Leagues'
-                        ,'Ponger Appareal'
+                        // 'Ponger Family Records.','Ponger Individual Records','Ponger Doubles Records','Ponger Leagues','Ponger Appareal'
+                        'Codecademy'
+                        ,'Codepen'
+                        ,'Github'
+                        ,'Linkedin'
+                        ,'Pluralsight(CodeSchool)'
+                        ,'Resume'
                     );
         // return view('pongbracket.about')->with('title',$title);
         return view('pongbracket.about', compact('title', 'features'));

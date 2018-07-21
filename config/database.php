@@ -1,11 +1,8 @@
 <?php
-    if(isset(($_SERVER["HTTP_HOST"])))
-    {
-        if ($_SERVER["HTTP_HOST"] === "qmatt.com" || $_SERVER["HTTP_HOST"] === "friends-of-pong-staging.herokuapp.com"){
-                    $dbUrl = parse_url(env("JAWSDB_URL"));    
-        }
-        else{$dbUrl = parse_url(env("JAWSDB_URL")); }
-    }
+   
+    if($_SERVER["HTTP_HOST"] === "localhost:8000"){$a='localhost';}
+    else{$dbUrl = parse_url(env("JAWSDB_URL")); }
+    
 
     
     

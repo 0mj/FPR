@@ -81,6 +81,9 @@
                         <p class="navbar-text nav-vertical-center">
                             <a class="navbar-link" href="{{ route('brackets.index') }}">Bracket Builder</a>
                         </p>
+                        <p class="navbar-text nav-vertical-center">
+                            <a class="navbar-link" href="{{ URL::to('/about/') }}">aBout</a>
+                        </p>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
