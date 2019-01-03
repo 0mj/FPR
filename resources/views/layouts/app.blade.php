@@ -15,13 +15,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ URL::to('css/footer.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ URL::to('css/header.css')}}">
-     <style type="text/css">
-        
-        .carousel-inner > .item > img {
-          width:640px;
-          height:360px;
-        }
-      </style>
+    
 </head>
 <body>
     <div class="page-wrap">
@@ -48,7 +42,7 @@
 
     <div id="app">
 
-        <nav class="navbar navbar-default navbar-static-top  navbar-inverse">
+        <nav class="navbar navbar-default navbar-static-top  navbar-inverse bottom-border-color">
             <div class="container">
                 <div class="navbar-header">
                 <!-- Collapsed Hamburger -->
@@ -58,7 +52,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a  class="navbar-brand" href="{{ URL::to('/') }}">
+                    <a href="{{ URL::to('/') }}">
                         <img class="img-responsive rackets" src="{{asset('img/table_tennis_paddle_and_ball.png')}}">
                     </a>
                 

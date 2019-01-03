@@ -1,4 +1,7 @@
 .rackets{
   height: 64px;
-  widows: 64px;
+  width: 64px;
+}
+.bottom-border-color{
+  border-bottom: solid 5px #3097d1;
 }
