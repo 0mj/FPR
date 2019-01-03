@@ -23,6 +23,7 @@
       </style>
 </head>
 <body>
+    <div class="page-wrap">
     <!-- $errors is a global variable which is a collection of errors. -->
     @if(count($errors) > 0 ) 
     <ul>
@@ -142,7 +143,8 @@
     </div> 
     <!-- END APP DIV -->
 
-
+    </div>
+    <!-- END WRAPPER -->
     @include('partials.footer')
     
 
