@@ -67,10 +67,9 @@
 
         </div>
         <div class="col-md-5">
-        Lorem ipsum dolor amet tilde pug flannel pickled, adaptogen man bun coloring book salvia 8-bit. Heirloom farm-to-table irony normcore green juice health goth scenester enamel pin lo-fi hella brooklyn. DIY kombucha ramps fixie, bushwick austin swag fam brunch lumbersexual. Quinoa migas banjo, adaptogen pour-over man braid plaid. Bushwick squid prism vice austin vexillologist.
+           
         </div>
     </div>
-
 
 @endsection
 
