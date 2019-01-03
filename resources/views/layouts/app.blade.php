@@ -14,6 +14,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ URL::to('css/footer.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::to('css/header.css')}}">
      <style type="text/css">
         
         .carousel-inner > .item > img {
@@ -47,58 +48,49 @@
 
     <div id="app">
 
-        <nav class="navbar navbar-default navbar-static-top">
+        <nav class="navbar navbar-default navbar-static-top  navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
-
-                    <!-- Collapsed Hamburger -->
+                <!-- Collapsed Hamburger -->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
                         <span class="sr-only">Toggle Navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-
-                        <!-- Branding Image -->
-                     <!--    <p class="navbar-text nav-vertical-center">
-                            <a class="navbar-brand" href="{{ url('/') }}">
+                    <a  class="navbar-brand" href="{{ URL::to('/') }}">
+                        <img class="img-responsive rackets" src="{{asset('img/table_tennis_paddle_and_ball.png')}}">
+                    </a>
+                
+                </div>
+                <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        
+                        <!-- <li class="navbar-text">
+                            <a href="{{ url('/') }}">
                                 {{ config('app.name', 'Laravel') }}
                             </a>
-                        </p> -->
-                        <p class="navbar-text nav-vertical-center">     
-                            <a class="navbar-link" href="{{ URL::to('/') }}">
-                                <img src="{{asset('img/table_tennis_paddle_and_ball.png')}}" height="64" width="64">
-                            </a>
-                        </p>        
-                        <p class="navbar-text nav-vertical-center">
-                        <a class="navbar-link" href="{{ route('pongers.index') }}">PONGERS</a>
-                        </p>
-                        <p class="navbar-text nav-vertical-center">
-                        <a class="navbar-link" href="{{ route('leagues.index') }}">LEAGUES</a>
-                        </p>
-                        <p class="navbar-text nav-vertical-center">
-                        <a class="navbar-link" href="{{ URL::to('/test_bracket_build/form/') }}">Create a Bracket (in dev)</a>
-                        </p>
-                        <p class="navbar-text nav-vertical-center">
+                        </li> -->
+                        <li class="navbar-text">
+                            <a class="navbar-link" href="{{ route('pongers.index') }}">Pongers</a>
+                        </li>
+                        <li class="navbar-text">
+                            <a class="navbar-link" href="{{ route('leagues.index') }}">Leagues</a>
+                        </li>
+                        <li class="navbar-text">
+                            <a class="navbar-link" href="{{ URL::to('/test_bracket_build/form/') }}">Bracket Builder</a>
+                        </li>
+                        <!-- <li class="navbar-text">
                             <a class="navbar-link" href="{{ route('brackets.index') }}">Bracket Builder</a>
-                        </p>
-                        <p class="navbar-text nav-vertical-center">
-                            <a class="navbar-link" href="{{ URL::to('/about/') }}">aBout</a>
-                        </p>
-                </div>
-
-                <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        &nbsp;
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
+                        </li> -->
+                        <li class="navbar-text">
+                            <a class="navbar-link" href="{{ URL::to('/about/') }}">About</a>
+                        </li>
+                        
                         <!-- Authentication Links -->
                         @guest
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
+                            <li class="navbar-text"><a href="{{ route('login') }}">Login</a></li>
+                            <li class="navbar-text"><a href="{{ route('register') }}">Register</a></li>
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
