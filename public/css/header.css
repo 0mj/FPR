@@ -5,3 +5,8 @@
 .bottom-border-color{
   border-bottom: solid 5px #3097d1;
 }
+
+.carousel-inner > .item > img {
+  width:640px;
+  height:360px;
+}
