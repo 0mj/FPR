@@ -53,4 +53,12 @@ Remove 's' from https and reload and styling works.
 
 
 
-
+# RMHL
+git config --global user.email "thirdshiftvideo@gmail.com" 
+https://appdividend.com/2017/08/20/laravel-5-5-tutorial-example/
+https://drive.google.com/drive/u/2/folders/1IPQX19WMrochKa60g1s2WoO4w89l01H9
+https://laravel.com/docs/5.5/controllers
+https://github.com/0mj/FPR/commits/master
+http://127.0.0.1:8000/brackets/create   whoops..
+https://git-scm.com/docs/git-config#FILES
+https://www.icloud.com/#
