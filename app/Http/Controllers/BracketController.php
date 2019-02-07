@@ -47,8 +47,10 @@ class BracketController extends Controller
      */
     public function index()
     {
-        $brackets = Bracket::all();
-        return view( 'brackets.index' , ['brackets' => $brackets] );
+        // $brackets = Bracket::all();
+        // return view( 'brackets.index' , ['brackets' => $brackets] );
+        // return view('brackets.index',compact('title', 'features'));
+        return view('brackets.index');
     }
 
     /**
@@ -59,6 +61,8 @@ class BracketController extends Controller
     public function create()
     {
         //
+       return view('pongbracket.index', ['brackets' => $brackets] );
+        // return 'created';
     }
 
     /**
@@ -69,28 +73,8 @@ class BracketController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'tournament_name' => 'bail|required|max:255',
-            // 'created_by_id' => 'bail|required',
-            'amount_of_competitors' => 'bail|required',
-            // 'amount_of_rounds' => 'bail|required',
-            // 'single_elimination'=> 'bail|required',
-            ]);
-
-
-        /*
-            $table->integer('created_by_id');
-            $table->string('tournament_name')->unique();
-            $table->integer('amount_of_competitors');
-            $table->integer('amount_of_rounds');
-            $table->string('single_elimination');
-
-
-
-
-        */
-        Bracket::create($request->all());
-        return redirect('brackets');
+        $request = $request;
+        return view('brackets.index', ['request' => $request]);
     }
 
     /**
@@ -101,7 +85,8 @@ class BracketController extends Controller
      */
     public function show(Bracket $bracket)
     {
-        return view('brackets.show', ['bracket' => $bracket ]);
+        // return view('brackets.show', ['bracket' => $bracket ]);
+        return view('pongbracket.index', ['brackets' => $brackets] );
     }
 
     /**
