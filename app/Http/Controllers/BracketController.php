@@ -77,11 +77,20 @@ class BracketController extends Controller
         if(!is_int($x)){
             $n = self::whatWeNeedToKnow($x);
             $amt_of_rounds = self::get_rounds($n);
-            
-            // if($n){
-               
-            // }
-            $html = self::printBracket($x);
+            if($amt_of_rounds > 1 ){
+                
+                $html = '';
+                $round =1 ;
+                foreach ($n as $key => $value) {
+                    
+                    $html .= self::printBracket($value, $round);
+                    $round++;
+                }
+                
+
+            }else{
+                $html = self::printBracket($x);
+            }
             return view('brackets.index', ['html' => $html]);
         } else {
             return 'please provide integer!';
@@ -190,8 +199,8 @@ class BracketController extends Controller
 		$return = [];
 		$buys = self::amountOfBuys($amount_of_teams);
 		$amount_of_teams_first_round = $amount_of_teams -  $buys;
-		$return['amount_of_teams_for_ideal'] = $amount_of_teams + $buys;
-		$return['amount_of_teams_entered'] = $amount_of_teams;
+		// $return['amount_of_teams_for_ideal'] = $amount_of_teams + $buys;
+		// $return['amount_of_teams_entered'] = $amount_of_teams;
 		$return['amount_of_teams_first_round'] = $amount_of_teams_first_round;
 		$buys > 0 ? $return['amount_of_teams_first_round_buys'] = $buys : '';
 		$return['amount_of_teams_second_round']  = ($amount_of_teams_first_round / 2 ) + $buys;
