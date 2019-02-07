@@ -72,14 +72,14 @@
                             <a class="navbar-link" href="{{ route('leagues.index') }}">Leagues</a>
                         </li>
                         <li class="navbar-text">
-                            <a class="navbar-link" href="{{ URL::to('/test_bracket_build/form/') }}">Bracket Builder</a>
+                            <!-- <a class="navbar-link" href="{{ URL::to('/test_bracket_build/form/') }}">Bracket Builder</a> -->
+                        </li>
+                        <li class="navbar-text">
+                            <a class="navbar-link" href="{{ route('brackets.index') }}">Brackets</a>
                         </li>
                         <!-- <li class="navbar-text">
-                            <a class="navbar-link" href="{{ route('brackets.index') }}">Bracket Builder</a>
-                        </li> -->
-                        <li class="navbar-text">
                             <a class="navbar-link" href="{{ URL::to('/about/') }}">About</a>
-                        </li>
+                        </li> -->
                         
                         <!-- Authentication Links -->
                         @guest
