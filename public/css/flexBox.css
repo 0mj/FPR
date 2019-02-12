@@ -1,8 +1,8 @@
 /*
  *  Flex Layout Specifics
 */
-#tournament{
-  display:flex !important;
+div.tournament{
+  display:flex;
   flex-direction:row;
 }
 .round{

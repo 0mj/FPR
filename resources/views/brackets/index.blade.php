@@ -16,7 +16,7 @@
 
 	</div>
 </div>	
-<div id="tournament">
+<div class="tournament">
 
 @php
 	if(isset($html)){ 
