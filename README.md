@@ -20,6 +20,10 @@ Alive @ https://friends-of-pong-staging.herokuapp.com
 # Heroku Local
 https://devcenter.heroku.com/articles/heroku-local
 
+# Testing
+This is the code repository for qmatt.com
+Prounanced 'matt' the q is silent.
+
 # Heroku 
 https://devcenter.heroku.com/
 https://devcenter.heroku.com/articles/heroku-cli
