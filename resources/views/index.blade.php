@@ -2,7 +2,7 @@
 
 
 
-@section('title', 'Friends of Pong')
+@section('title', 'Qmatt')
 
 @section('main')
     
@@ -45,14 +45,15 @@
     </div>
     <div class="row">
         <div class="col-md-7">
-            <h1>Friends of Pong</h1>
-            <blockquote>"Ping Pong Tournaments and Standings."</blockquote>
+            <h1>QMatt</h1>
+            <blockquote>The q is silent. It's prounounced Matt.</blockquote>
                         
-            <p>
-                The links above show leagues and associated pongers.  The bracket link allows you to create your own tournament bracket. 
+            <p>Test site built with Laravel 5.5</p>
+            
+            <p>Idea for this was to create an application that auto generates a tournament bracket.  
+            The links above show leagues and associated pongers.  
+            The bracket link allows you to create your own tournament bracket. 
             </p>
-            
-            
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-11">
