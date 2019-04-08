@@ -10,35 +10,7 @@
     <div class="row">
         <!-- Carousel -->
         <div class="col-md-7">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="10000" keyboard="true">
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="{{asset('img/pongers_flickr/carl_dyer_barca_spain.JPG')}}" class="img-reponsive" >
-                        <!-- <div id="lorempixel"></div> -->
-                        <div class="carousel-caption">
-
-                        </div>
-                    </div>
-                    
-                    <div class="item">
-                      <img src="{{asset('img/pongers_flickr/dcrescenti.JPG')}}"   class="img-reponsive" >
-                      <!-- <div id="lorempixel2"></div> -->
-                        <div class="carousel-caption">
-
-                        </div>
-                    </div>
-                    
-                    <div class="item">
-                        <img src="{{asset('img/pongers_flickr/Stefan_Hillgruber_bw.JPG')}}" alt="..." class="img-reponsive"  >
-                        <!-- <div id="lorempixel3"></div> -->
-                        <div class="carousel-caption">
-
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-            </div>
+            <div style="width:100%;height:0;padding-bottom:76%;position:relative;"><iframe src="https://giphy.com/embed/MF1kR4YmC2Z20" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/90s-computer-MF1kR4YmC2Z20">via GIPHY</a></p>
         </div>
         <div class="col-md-5">
         </div>
