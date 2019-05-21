@@ -30,6 +30,7 @@ https://devcenter.heroku.com/articles/heroku-cli
 
 # Heroku Jaws
 https://devcenter.heroku.com/articles/jawsdb
+Access admin panel: https://dashboard.heroku.com/apps/friends-of-pong
 
 # Heroku CLI
 `heroku config -s | grep JAWSDB_URL >>.env`
