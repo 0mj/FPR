@@ -66,6 +66,7 @@ https://github.com/0mj/FPR/commits/master
 http://127.0.0.1:8000/brackets/create   whoops..
 https://git-scm.com/docs/git-config#FILES
 https://www.icloud.com/#
+https://laravel-mix.com/docs/4.0/installation
 
 # RMHL  Invalid request (Unsupported SSL request)
 NOT a 'real' webserver: https://www.php.net/manual/en/features.commandline.webserver.php
