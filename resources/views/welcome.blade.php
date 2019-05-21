@@ -11,10 +11,18 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
+<<<<<<< HEAD
         <link href="/css/app.css" rel="stylesheet" type="text/css">
     </head>
     <body>
     <div id="root"></div>
         <script src="/js/app.js"></script>
+=======
+         <link href="/css/app.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="example"></div>
+         <script src="/js/app.js"></script>
+>>>>>>> 4e335fa
     </body>
 </html>
