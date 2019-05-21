@@ -1,6 +1,7 @@
 <?php
    
-    $_SERVER["HTTP_HOST"] === "localhost:8000" ? $a = '' : $dbUrl = parse_url(env("JAWSDB_URL"));
+    // $_SERVER["HTTP_HOST"] === "localhost:8000" ? $a = '' : $dbUrl = parse_url(env("JAWSDB_URL"));
+    $dbUrl = parse_url(env("JAWSDB_URL"));
     
 
     

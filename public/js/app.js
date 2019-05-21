@@ -12510,6 +12510,11 @@ var Example = function (_Component) {
                                 'div',
                                 { className: 'panel-body' },
                                 'hello world.'
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'panel-body' },
+                                'hello world.'
                             )
                         )
                     )

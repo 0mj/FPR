@@ -13,6 +13,9 @@ export default class Example extends Component {
                             <div className="panel-body">
                                 hello world.
                             </div>
+                            <div className="panel-body">
+                                hello world.
+                            </div>
                         </div>
                     </div>
                 </div>
