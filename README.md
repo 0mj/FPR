@@ -73,6 +73,13 @@ laravel and react https://youtu.be/1RPTCjnv7X8
 NOT a 'real' webserver: https://www.php.net/manual/en/features.commandline.webserver.php
 
 
+# TRY RESETING
+FULL RESET:
+rm -rf node_modules
+rm package-lock.json yarn.lock
+npm cache clear --force
+npm install
+
 # turn debugging on
 config/app.php
     'debug' => env('APP_DEBUG', true),

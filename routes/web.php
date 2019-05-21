@@ -34,12 +34,6 @@ Route::post('login', [
 	'as' => 'auth.signin'
 ]);
 
-<<<<<<< HEAD
-Route::get('/welcome', function () {
-    return view('welcome');
-});
-=======
 Route::get('/react-quick-sand', function () {
     return view('welcome');
 });
->>>>>>> 4e335fa
