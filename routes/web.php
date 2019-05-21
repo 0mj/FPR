@@ -33,3 +33,7 @@ Route::post('login', [
 	'uses' => 'SigninController@signin',
 	'as' => 'auth.signin'
 ]);
+
+Route::get('/welcome', function () {
+    return view('welcome');
+});
