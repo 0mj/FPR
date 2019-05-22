@@ -69,6 +69,9 @@ https://git-scm.com/docs/git-config#FILES
 https://www.icloud.com/#
 laravel and react https://youtu.be/1RPTCjnv7X8
 
+laravel and react  https://laravel.com/docs/5.8/frontend
+`php artisan preset react`
+
 # RMHL  Invalid request (Unsupported SSL request)
 NOT a 'real' webserver: https://www.php.net/manual/en/features.commandline.webserver.php
 
