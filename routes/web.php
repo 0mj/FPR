@@ -34,6 +34,4 @@ Route::post('login', [
 	'as' => 'auth.signin'
 ]);
 
-Route::get('/react-quick-sand', function () {
-    return view('welcome');
-});
+Route::get('/react-sandbox', function () { return view('react-sandbox.index'); });
