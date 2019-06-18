@@ -72,6 +72,14 @@ laravel and react https://youtu.be/1RPTCjnv7X8
 laravel and react  https://laravel.com/docs/5.8/frontend
 `php artisan preset react`
 
+
+
+#configure ES6 with Laravel React using babel
+https://bit.ly/2WHGbnn
+https://eslint.org/docs/user-guide/configuring
+https://www.npmjs.com/package/eslint-plugin-react-hooks
+https://reactjs.org/docs/hooks-rules.html
+
 # RMHL  Invalid request (Unsupported SSL request)
 NOT a 'real' webserver: https://www.php.net/manual/en/features.commandline.webserver.php
 

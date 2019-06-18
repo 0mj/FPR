@@ -77,9 +77,9 @@
                         <li class="navbar-text">
                             <a class="navbar-link" href="{{ route('brackets.index') }}">Brackets</a>
                         </li>
-                        <!-- <li class="navbar-text">
+                        <li class="navbar-text">
                             <a class="navbar-link" href="{{ URL::to('/about/') }}">About</a>
-                        </li> -->
+                        </li>
                         
                         <!-- Authentication Links -->
                         @guest
