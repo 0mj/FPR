@@ -19,7 +19,7 @@
         <div class="">
             <h1>qMatt</h1>
             <blockquote>Prounounced 'Matt' The q is silent :]</blockquote>
-            <p>Sandbox application where users can create / edit ponger records, associate them with a league, create / edit  leagues and create a tournament bracket.</p>
+            <p>Sandbox box application where users can create / edit ponger records, associate them with a league, create / edit  leagues and create a tournament bracket.</p>
         </div>
         
     </div>
