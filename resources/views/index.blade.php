@@ -65,7 +65,9 @@
     <section class="col-md-6">
         <!-- embed google photo code generated from https://ctrlq.org/google/photos/ -->
         <a href='https://photos.google.com/share/AF1QipOI41W20x8xnGIagp2J3nKOxwgLJlL-fbdPuqRpvgJ64O24teYnOM6mI0KINCe_dQ?key=dGVmcnl3MWVKY2JrMVgzRzUwYTdhd0JFRlhCSC1n&source=ctrlq.org'>
-            <img src='https://lh3.googleusercontent.com/Cm8tKEjyZu2vrcx8S83E3Iqlvg5J_TbcMa1HZuBLHdneKGwIam7HKHMB1a9zrsHPXQMde7iDaV9rYArKWg-DYjkRg6uuXOU54LLQCauNvxo1aJ3rYg49sc6lEH5mXQqSjl19TM_mQCc=w2400' />
+            <img src='https://lh3.googleusercontent.com/Cm8tKEjyZu2vrcx8S83E3Iqlvg5J_TbcMa1HZuBLHdneKGwIam7HKHMB1a9zrsHPXQMde7iDaV9rYArKWg-DYjkRg6uuXOU54LLQCauNvxo1aJ3rYg49sc6lEH5mXQqSjl19TM_mQCc=w2400' 
+            width="600" height="400"
+            />
         </a>
     </section>
 </div>
