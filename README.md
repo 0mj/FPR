@@ -22,7 +22,7 @@ https://devcenter.heroku.com/articles/heroku-local
 
 # Testing
 This is the code repository for qmatt.com
-Pronounced 'matt' the q is silent.
+Pronounced 'matt' the q is silent. 
 
 # Heroku 
 https://devcenter.heroku.com/
