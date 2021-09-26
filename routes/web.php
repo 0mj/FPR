@@ -35,3 +35,6 @@ Route::post('login', [
 ]);
 
 Route::get('/react-sandbox', function () { return view('react-sandbox.index'); });
+Route::get('/about', function () {
+	return view('about.index');
+});
