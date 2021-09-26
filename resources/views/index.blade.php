@@ -13,16 +13,6 @@
     <div class="col-md-7">
 
     </div>
-<<<<<<< HEAD
-    <div class="col-md-5">
-    </div>
-</div>
-<div class="row">
-    <div class="">
-        <h1>qMatt</h1>
-        <blockquote>Prounounced 'Matt' The q is silent :]</blockquote>
-        <p>Sandbox sandbox box application where users can create / edit ponger records, associate them with a league, create / edit leagues and create a tournament bracket.</p>
-=======
     <div class="row">
         <div class="">
             <h1>qMatt</h1>
@@ -30,7 +20,6 @@
             <p>Create and edit player records, associate them with a league, create / edit  leagues and create a tournament bracket.</p>
         </div>
         
->>>>>>> beta
     </div>
 
 </div>
