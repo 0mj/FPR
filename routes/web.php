@@ -13,16 +13,16 @@
 
 
 Route::get('/', function () {
-    return view('index');
+	return view('index');
 })->name('index.index');
 
 # https://laravel.com/docs/5.5/controllers#restful-partial-resource-routes
 # register many resource controllers at once by passing an array to the resources method:
 Route::resources([
-	'pongers'=> 'PongerController',
-	'leagues'=> 'LeagueController',
-	'brackets'=> 'BracketController',
-	
+	'pongers' => 'PongerController',
+	'leagues' => 'LeagueController',
+	'brackets' => 'BracketController',
+
 ]);
 
 
@@ -34,7 +34,9 @@ Route::post('login', [
 	'as' => 'auth.signin'
 ]);
 
-Route::get('/react-sandbox', function () { return view('react-sandbox.index'); });
+Route::get('/react-sandbox', function () {
+	return view('react-sandbox.index');
+});
 Route::get('/about', function () {
 	return view('about.index');
 });
