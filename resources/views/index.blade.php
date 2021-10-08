@@ -16,7 +16,7 @@
     <div class="row">
         <div class="">
             <h1>qMatt</h1>
-            <blockquote>Prounounced 'Matt' The q is silent :]</blockquote>
+            <blockquote>PHP, Ruby, Javascript</blockquote>
             <p>Create and edit player records, associate them with a league, create / edit  leagues and create a tournament bracket.</p>
         </div>
         
