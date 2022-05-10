@@ -5,7 +5,7 @@ laravel new projectname (creates new laravel project)
 `composer install`
 
 `php artisan serve`
-look at notes on dad pc.
+look at notes on ~~dad pc~~.
 
 
 #PUSH TEST 
