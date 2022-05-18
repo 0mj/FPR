@@ -94,3 +94,7 @@ npm install
 # turn debugging on
 config/app.php
     'debug' => env('APP_DEBUG', true),
+
+
+
+
